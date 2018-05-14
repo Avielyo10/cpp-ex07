@@ -10,7 +10,7 @@ class TicTacToe{
     TicTacToe(int num);
     ~TicTacToe(){}
     void play(Player& xPlayer,Player& oPlayer);
-    Player winner() const{return winPlayer;}
+    Player winner() const;
     Board board() const;
     bool checkIfFull();
     void checkWinnings(Player& p);

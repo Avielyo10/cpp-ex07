@@ -88,28 +88,26 @@ int main() {
 		And the winner is YXPlayer, playing as O!
 	*/
 
-	cout <<"\n______________champion_____________"<<endl;
+	cout <<"\n____________champion_____________"<<endl<<endl;
 	
 	Champion champion;
-	playAndPrintResults(game, champion, player1);
-		// The winner is <your name>, playing as X!
-	playAndPrintResults(game, player1, champion);
-		// The winner is <your name>, playing as O!
-	playAndPrintResults(game, champion, player2);
-		// The winner is <your name>, playing as X!
-	playAndPrintResults(game, player2, champion);
-		// The winner is <your name>, playing as O!
-	playAndPrintResults(game, champion, player3);
-		// The winner is <your name>, playing as X!
-	playAndPrintResults(game, player3, champion);
-		// The winner is <your name>, playing as O!
-	playAndPrintResults(game, champion, player4);
-		// The winner is <your name>, playing as X!
-	playAndPrintResults(game, player4, champion);
-		// The winner is <your name>, playing as O!
+	// playAndPrintResults(game, champion, player1);
+	// 	// The winner is <your name>, playing as X!
+	// playAndPrintResults(game, player1, champion);
+	// 	// The winner is <your name>, playing as O!
+	// playAndPrintResults(game, champion, player2);
+	// 	// The winner is <your name>, playing as X!
+	// playAndPrintResults(game, player2, champion);
+	// 	// The winner is <your name>, playing as O!
+	// playAndPrintResults(game, champion, player3);
+	// 	// The winner is <your name>, playing as X!
+	// playAndPrintResults(game, player3, champion);
+	// 	// The winner is <your name>, playing as O!
+	// playAndPrintResults(game, champion, player4);
+	// 	// The winner is <your name>, playing as X!
+	// playAndPrintResults(game, player4, champion);
+	// 	// The winner is <your name>, playing as O!
 
-
-	cout <<"\n______________champion scores_____________"<<endl;
 	playAndPrintWinner(game, champion, player1);
 		// The winner is <your name>, playing as X!
 	playAndPrintWinner(game, player1, champion);

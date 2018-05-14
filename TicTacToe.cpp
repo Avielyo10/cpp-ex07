@@ -7,13 +7,15 @@ TicTacToe::TicTacToe(int num){
    gameBoard = temp;
 }
 Board TicTacToe::board() const{
-    Board winningBoard = gameBoard;
+    return gameBoard;
+}
+Player TicTacToe::winner() const{
     for(int i =0;i<gameBoard.SIZE;++i){
         for(int j =0;j<gameBoard.SIZE;++j){
             gameBoard.board[i][j] = '.';
         }
     }
-    return winningBoard; 
+    return winPlayer;
 }
 bool TicTacToe::checkVer(Player& p){
    for(int i = 0;i<gameBoard.SIZE;++i){
