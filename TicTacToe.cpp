@@ -98,7 +98,6 @@ void TicTacToe::play(Player& xPlayer,Player& oPlayer){
     isFull = false, isWinner = false;
     xPlayer.myChar='X';
     oPlayer.myChar='O';
-    // cout << "Players : " << xPlayer.name()<< " "<< oPlayer.name()<<endl;
     while(!isWinner&&!isFull){
         try{
           Coordinate x = xPlayer.play(gameBoard);
@@ -116,6 +115,10 @@ void TicTacToe::play(Player& xPlayer,Player& oPlayer){
             winPlayer.myChar = oPlayer.getChar();
             winPlayer.myName = oPlayer.name();
             break;
+        }
+        if(isFull&&!isWinner){
+            winPlayer.myName = oPlayer.name();
+            winPlayer.myChar = oPlayer.getChar();
         }
         try{
             Coordinate o = oPlayer.play(gameBoard);
