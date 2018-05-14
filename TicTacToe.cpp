@@ -116,10 +116,6 @@ void TicTacToe::play(Player& xPlayer,Player& oPlayer){
             winPlayer.myName = oPlayer.name();
             break;
         }
-        if(isFull&&!isWinner){
-            winPlayer.myName = oPlayer.name();
-            winPlayer.myChar = oPlayer.getChar();
-        }
         try{
             Coordinate o = oPlayer.play(gameBoard);
             if(!isWinner&&!isFull&&gameBoard[o]=='.'){
