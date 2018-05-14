@@ -113,7 +113,6 @@ void TicTacToe::play(Player& xPlayer,Player& oPlayer){
             break;
         }  
         }catch(string& ex){
-            gameBoard.board[0][0] = 'X';
             winPlayer.myChar = oPlayer.getChar();
             winPlayer.myName = oPlayer.name();
             break;
