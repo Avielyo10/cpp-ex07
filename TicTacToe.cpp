@@ -117,6 +117,7 @@ void TicTacToe::play(Player& xPlayer,Player& oPlayer){
             break;
         }
        if(isFull&&!isWinner){
+          cout <<"is full"<<endl;
             winPlayer.myName = oPlayer.name();
             winPlayer.myChar = oPlayer.getChar();
         }
@@ -137,6 +138,7 @@ void TicTacToe::play(Player& xPlayer,Player& oPlayer){
            break; 
         }
         if(isFull&&!isWinner){
+           cout <<"is full"<<endl;
             winPlayer.myName = oPlayer.name();
             winPlayer.myChar = oPlayer.getChar();
         }
